@@ -1,0 +1,519 @@
+<!DOCTYPE html> 
+<html> 
+<head> <title>MilkyTracker</title> 
+<meta charset="UTF-8" /> 
+<meta name="generator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" /> 
+<link rel="stylesheet" type="text/css" href="index.css" /> 
+<script type="text/javascript" 
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" 
+></script> 
+<style type="text/css"> 
+.MathJax_MathML {text-indent: 0;} 
+</style> 
+</head><body 
+>
+   <div class="maketitle">
+                                                                  
+
+                                                                  
+                                                                  
+
+                                                                  
+
+<h2 class="titleHead"><a 
+href="http://www.milkytracker.org/" >MilkyTracker</a></h2>
+ <div class="author" ><span 
+class="ecrm-1200">Vicente Gonz</span><span 
+class="ecrm-1200">á</span><span 
+class="ecrm-1200">lez Ruiz</span></div><br />
+<div class="date" ><span 
+class="ecrm-1200">May 30, 2018</span></div>
+   </div>
+   <h3 class="likesectionHead"><a 
+ id="x1-1000"></a>Contents</h3>
+   <div class="tableofcontents">
+   <span class="sectionToc" >1 <a 
+href="#x1-20001" id="QQ2-1-2">What is MilkyTracker?</a></span>
+<br />   <span class="sectionToc" >2 <a 
+href="#x1-30002" id="QQ2-1-3">A little bit of history about trackers</a></span>
+<br />   <span class="sectionToc" >3 <a 
+href="#x1-40003" id="QQ2-1-4">What is a music module?</a></span>
+<br />   <span class="sectionToc" >4 <a 
+href="#x1-50004" id="QQ2-1-5">How can I play a module in Linux?</a></span>
+<br />   <span class="sectionToc" >5 <a 
+href="#x1-60005" id="QQ2-1-6">Some more deﬁnitions</a></span>
+<br />   <span class="sectionToc" >6 <a 
+href="#x1-70006" id="QQ2-1-7">Getting samples</a></span>
+<br />   <span class="sectionToc" >7 <a 
+href="#x1-80007" id="QQ2-1-8">Getting sound modules</a></span>
+<br />   <span class="sectionToc" >8 <a 
+href="#x1-90008" id="QQ2-1-9">Taxonomy of a track row (revisited)</a></span>
+<br />   <span class="sectionToc" >9 <a 
+href="#x1-100009" id="QQ2-1-10">About keyboards</a></span>
+<br />   <span class="sectionToc" >10 <a 
+href="#x1-1100010" id="QQ2-1-11">Eﬀects (FX)</a></span>
+<br />   <span class="sectionToc" >11 <a 
+href="#x1-1200011" id="QQ2-1-12">Please, no more theory!!!</a></span>
+   </div>
+<!--l. 8--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">1   </span> <a 
+ id="x1-20001"></a>What is MilkyTracker?</h3>
+     <ul class="itemize1">
+     <li class="itemize">MilkyTracker  a  sound  tracker  (in  other  words,  a  music  sequencer).  It
+     represents  music  tracks  as  an  arrangement  of  discrete  musical  notes
+     positioned in one of several channels, at discrete chronological positions
+     on a timeline.</li></ul>
+                                                                  
+
+                                                                  
+<div class="center" 
+>
+<!--l. 17--><p class="noindent" >
+
+</p><!--l. 18--><p class="noindent" ><img 
+src="data/milky-tracker-description.png" alt="PIC"  
+ /></p></div>
+<!--l. 21--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">2   </span> <a 
+ id="x1-30002"></a>A little bit of history about trackers</h3>
+     <ul class="itemize1">
+     <li class="itemize">Sound  trackers  were  born  with  the  <a 
+href="http://en.wikipedia.org/wiki/Amiga" >Commodore  Amiga</a>  in  1985.  The
+     Amiga  mounted  an  audio  coprocessor  named  <a 
+href="http://en.wikipedia.org/wiki/Original_Chip_Set" >Paula</a>,  which  could  be
+     “programmed” by sending a <span 
+class="ecti-1000">module </span>through <a 
+href="http://en.wikipedia.org/wiki/Direct_memory_access" >DMA</a> producing something
+     similar to <a 
+href="http://en.wikipedia.org/wiki/Wavetable_synthesis" >wavetable mixing</a>. Paula can mix up to 4 sequences (tracks) of
+     signed linear-quantized 8-bit two&#x2019;s complement PCM sound samples and
+     send the mixed sound to an stereo <a 
+href="http://en.wikipedia.org/wiki/Digital-to-analog_converter" >DAC</a>.
+     </li>
+     <li class="itemize">In 1987, the sound arrives shyly to the PC with the <a 
+href="http://en.wikipedia.org/wiki/Sound_Blaster" >Sound Blaster</a>. This
+     year <a 
+href="http://woolyss.com/tracking-trackers.php?s=Amiga" >the ﬁrst<span class="footnote-mark"><a 
+href="index2.html#fn1x0"><sup class="textsuperscript">1</sup></a></span><a 
+ id="x1-3001f1"></a> 
+     amiga module</a>, <a 
+href="http://modarchive.org/index.php?request=view_by_moduleid&query=33438" >amegas</a>,is created by Karsten Obarski, the creator of the
+     ﬁrst module tracker <a 
+href="http://en.wikipedia.org/wiki/Ultimate_Soundtracker" >The Ultimate SoundTracker</a>.
+     </li>
+     <li class="itemize">In 1989, there are thousands of modules, such as <a 
+href="http://modarchive.org/index.php?request=view_by_moduleid&query=97751" >electricity</a>.
+     </li>
+     <li class="itemize">During the 1990s, tracker musicians gravitated from Amiga platforms to
+     the PC, which started to mount sound cards such as the <a 
+href="http://en.wikipedia.org/wiki/Sound_Blaster_16" >Sound Blaster 16</a>
+     and <a 
+href="http://en.wikipedia.org/wiki/Gravis_Ultrasound" >Gravis Ultrasound (GUS)</a>. For example, GUS cards can mix up to 32
+     channels of CD Quality (44.1 kHz/16 bit/Stereo).
+     </li>
+     <li class="itemize">In the following years, as CPUs got faster and acquired special multimedia
+     processing abilities (e.g. <a 
+href="http://en.wikipedia.org/wiki/MMX_%28instruction_set%29" >MMX</a>), the responsibility for audio mixing passed
+     from hardware to software, which gradually enabled the use of more and
+     more channels (the “record” belong to <a 
+href="http://en.wikipedia.org/wiki/Impulse_Tracker" >Impulse Tracker</a> which can handle
+     up to 64 channels).
+     </li>
+     <li class="itemize">MilkyTracker was created in mid-90s to emulate the popular <a 
+href="http://en.wikipedia.org/wiki/FastTracker_2" >Fasttracker
+     II</a> DOS and the Amiga <a 
+href="http://sourceforge.net/projects/protracker/" >ProTracker 2/3</a> programs.
+                                                                  
+
+                                                                  
+     </li>
+     <li class="itemize">In 1998, amazing pieces such as <a 
+href="http://modarchive.org/index.php?request=view_by_moduleid&query=58684" >squired</a> have being created.
+     </li>
+     <li class="itemize">Still  some  musicians  use  this  format  to  create  their  compositions.  An
+     example: <a 
+href="http://modarchive.org/index.php?request=view_by_moduleid&query=173932" >Pinochet Asesino</a>.
+     </li></ul>
+<!--l. 85--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">3   </span> <a 
+ id="x1-40003"></a>What is a music module?</h3>
+     <ul class="itemize1">
+     <li class="itemize">Basically, a <a 
+href="http://en.wikipedia.org/wiki/MOD_%28file_format%29" >module</a> is a collection of tracks which store samples, notes,
+     volumes and eﬀects, indicating how and when the samples are to be played.
+     More accurately, <a 
+href="http://www.wildbunny.co.uk/blog/2012/05/15/composing-in-game-music/" >Music modules</a> are a hybrid between the sequenced type
+     of music ﬁles like MIDI and wave ﬁles. Like MIDI ﬁles, modules contain
+     speciﬁcations about what instrument to play, at which pitch, using which
+     eﬀects, and so on. However, they also include the actual samples to play.
+     </li>
+     <li class="itemize">The samples are usually short in time, one shot sounds (like bass drums,
+     snares) or samples (in fact, sequences of audio samples) that are can be
+     looped to emulate a sustaining note (like strings, leads).
+     </li></ul>
+<!--l. 108--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">4   </span> <a 
+ id="x1-50004"></a>How can I play a module in Linux?</h3>
+<!--l. 109--><p class="noindent" >Some options:
+     </p><ol  class="enumerate1" >
+     <li 
+  class="enumerate" id="x1-5002x1"><a 
+href="http://sourceforge.net/projects/xmp/" >xmp</a>: xmp is a module player for Unix-like systems that plays over 90
+     mainstream and obscure module formats from Amiga, Atari, Acorn, Apple
+     IIgs and PC, including Protracker (MOD), Scream Tracker 3 (S3M), Fast
+     Tracker II (XM) and Impulse Tracker (IT) ﬁles.
+     </li>
+     <li 
+  class="enumerate" id="x1-5004x2"><a 
+href="http://www.cubic.org/player/" >Open Cubic Player (ocp)</a>: a audio player with several interface capabilities.
+     </li>
+     <li 
+  class="enumerate" id="x1-5006x3"><a 
+href="http://en.wikipedia.org/wiki/VLC_media_player" >VLC</a>: of course, why not?
+                                                                  
+
+                                                                  
+     </li>
+     <li 
+  class="enumerate" id="x1-5008x4"><a 
+href="http://en.wikipedia.org/wiki/XMMS" >XMMS</a>: a Winamp clone.
+     </li>
+     <li 
+  class="enumerate" id="x1-5010x5"><a 
+href="http://en.wikipedia.org/wiki/Audacious_%28software%29" >Audacious:</a> An excelent audio player with a Jack interface.
+     </li></ol>
+<!--l. 132--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">5   </span> <a 
+ id="x1-60005"></a>Some more deﬁnitions</h3>
+     <ul class="itemize1">
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Music_tracker" >Pattern</a>:  A  pattern  is  a  group  of  simultaneously  played  tracks  that
+     represents a full section of the song. Patters have a ﬁxed number of rows
+     (typically 64) on which notes and eﬀects can be placed (most trackers lay
+     out tracks in a vertical fashion) and may be repeated throughout a song.
+     </li>
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Music_tracker" >Order</a>: An order is part of any sequence of patterns which deﬁnes the
+     layout of a song. Patterns can be repeated across multiple orders to save
+     tracking time and ﬁle space.
+     </li>
+     <li class="itemize"><a 
+href="http://www.linuxplanet.com/linuxplanet/tutorials/4363/1" >Track</a>: The section of a pattern which is sequenced in an independent DAC
+     channel, providing thus <a 
+href="http://en.wikipedia.org/wiki/Polyphony" >poliphony</a><span class="footnote-mark"><a 
+href="index3.html#fn2x0"><sup class="textsuperscript">2</sup></a></span><a 
+ id="x1-6001f2"></a> .
+     Tracks  are  like  individual  members  of  an  orchestra,  except  that  your
+     orchestra consists of little chunks of music rather (samples) than speciﬁc
+     instruments. Whereas the original Amiga trackers only provided four tracks
+     due to the hardware limits, modern trackers can mix a virtually unlimited
+     number of channels into one sound stream through software mixing.
+     </li>
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Music_tracker" >Tracking</a>: The process of composing module ﬁles.
+     </li>
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Ultimate_Soundtracker" >Channel</a>: Channel and track are synonymous. For example, MilkyTracker
+     can mix up to 32 channels, meaning 32 sounds can play simultaneously.
+                                                                  
+
+                                                                  
+     </li>
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Musical_instrument" >Instrument</a>: A collection of one or more samples. Instruments are usually
+     classiﬁed into four categories: <a 
+href="http://en.wikipedia.org/wiki/Rhythm_section#Instruments" >rhythm</a> (such as a bass drum), <a 
+href="http://en.wikipedia.org/wiki/Bass_%28instrument%29" >bass</a> (such as
+     a bass guitar), <a 
+href="http://www.howmusicworks.org/300/Chords-and-Harmony" >chords</a> (such as a guitar) and leads (such as a piano). An
+     instrument is a single sample along with an optional indication of which
+     portion of the sample can be repeated to hold a sustained note.
+     </li>
+     <li class="itemize"><a 
+href="http://dem0lecule.newgrounds.com/news/post/753500" >Instrument Editor</a>. Usually, when a new instrument is created, a sample
+     is liked to it. In most trackers there is a panel to edit/add envelop, control
+     the global volume, fading, panning, etc.
+     </li>
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Module_file" >Sample</a>: A sample is a small digital sound ﬁle of an instrument, voice, or
+     other kind of sound. When very short samples are used (in order to reduce
+     as much as possible the size of the module ﬁle), the module usually is
+     called a <a 
+href="http://en.wikipedia.org/wiki/Chiptune" >chip tune</a> and <a 
+href="http://woolyss.com/chipmusic.php" >chip music</a> is produced.
+     </li>
+     <li class="itemize"><a 
+href="http://dem0lecule.newgrounds.com/news/post/753500" >Sample Editor</a>. It is very similar to Instrument Editor. This is where you
+     put your audio ﬁle such as WAV.
+     </li>
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Note" >Note</a>: A note designates the frequency at which the sample is played back.
+     By increasing or decreasing the playback speed of a digital sample, the
+     pitch is raised or lowered, simulating instrumental notes (e.g. C, C#, D,
+     etc.).
+     </li>
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Tempo" >Tempo</a>: Controls the speed of the playback and usually is measured in
+     BPM (Beats Per Minute).
+     </li>
+     <li class="itemize"><a 
+href="http://www.milkytracker.org/docs/MilkyTracker.html#effects" >Eﬀect</a>: An eﬀect is a special function applied to a particular note. Common
+     tracker eﬀects include volume, portamento, vibrato, retrigger, tremolo and
+     arpeggio.
+     </li>
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Loudness" >Volume</a>: The energy of the note.
+     </li>
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Portamento" >Portamento</a>: Pitch sliding from one note to another.
+     </li>
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Vibrato" >Vibrato</a>: Regular and pulsating change of pitch of a note.
+     </li>
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Retrigger" >Retrigger</a>: When a sample is replayed a set number of times within a
+     certain timeframe.
+                                                                  
+
+                                                                  
+     </li>
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Tremolo" >Tremolo</a>: The endure of a note produced either by rapid reiteration of
+     a note, by rapid repeated slight variation in the pitch of a note, or by
+     sounding  two  notes  of  slightly  diﬀerent  pitches  to  produce  prominent
+     overtones.
+     </li>
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Arpeggio" >Arpegio</a>: When notes in a chord are played or sung in sequence, one after
+     the other, rather than ringing out simultaneously.
+     </li>
+     <li class="itemize"><a 
+href="http://resources.openmpt.org/tracker_handbook/page/Glossary.htm" >Panning</a>: Is the control of the balance of a stereo or multichannel signal.
+     </li>
+     <li class="itemize"><a 
+href="http://milkytracker.org/docs/Vhiiula-TechniquesOfChipping.txt" >Echo</a>: Is the recursive playback of a sound slightly delayed and usually
+     attenuated.
+     </li>
+     <li class="itemize"><a 
+href="http://en.wikipedia.org/wiki/Fade_%28audio_engineering%29" >Fading</a>: A gradual increase or decrease in the level of the sample.
+     </li></ul>
+<!--l. 263--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">6   </span> <a 
+ id="x1-70006"></a>Getting samples</h3>
+     <ul class="itemize1">
+     <li class="itemize">There are several alternatives:
+         <ol  class="enumerate1" >
+         <li 
+  class="enumerate" id="x1-7002x1"><span 
+class="ecbx-1000">Recording</span>:  You  can  create  your  own  samples  by  playing  an
+         instrument like a guitar or a piano and recording (sampling) it.
+         </li>
+         <li 
+  class="enumerate" id="x1-7004x2"><span 
+class="ecbx-1000">Copying</span>: You could also extract sample sounds from a keyboard or
+         a synthesizer, o even better, download them from Internet sites such
+         as <a 
+href="http://freewavesamples.com/" class="url" ><span 
+class="ectt-1000">http://freewavesamples.com/</span></a>.
+         </li>
+         <li 
+  class="enumerate" id="x1-7006x3"><span 
+class="ecbx-1000">Generating samples</span>: Another way to get samples is to generate
+         them using a tool. This is actually done a lot for chip tunes because
+         you can make some very small samples using this technique. Milky
+         Tracker has some great options to facilitate this. For example, you can
+         use basic shapes wave shapes as samples, or alter them by using the
+         Draw function of Milky Tracker. It&#x2019;s also possible to draw a sample
+         from scratch.</li></ol>
+                                                                  
+
+                                                                  
+     </li></ul>
+<!--l. 283--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">7   </span> <a 
+ id="x1-80007"></a>Getting sound modules</h3>
+     <ul class="itemize1">
+     <li class="itemize">Many websites host large numbers of these ﬁles:
+         <ol  class="enumerate1" >
+         <li 
+  class="enumerate" id="x1-8002x1"><a 
+href="http://modarchive.org/index.php" >The Mod Archive</a>: The most comprehensive.
+         </li>
+         <li 
+  class="enumerate" id="x1-8004x2"><a 
+href="ExoticA" >http://www.exotica.org.uk/wiki/Main_Page</a>:  An  Amiga  and  retro
+         gaming/computer music interest wiki including search-able computer
+         music collections, game and demo scene information.
+         </li>
+         <li 
+  class="enumerate" id="x1-8006x3"><a 
+href="http://demodulate.scene.org/" >Demodulate</a>: are sites with demos and module music.
+         </li>
+         <li 
+  class="enumerate" id="x1-8008x4"><a 
+href="http://www.chiptune.com/" >Chiptune</a><span class="footnote-mark"><a 
+href="index4.html#fn3x0"><sup class="textsuperscript">3</sup></a></span><a 
+ id="x1-8009f3"></a> :
+         An online community in respect and relation to chip music, art and
+         its parallels.
+         </li>
+         <li 
+  class="enumerate" id="x1-8011x5"><a 
+href="http://www.mirsoft.info/gamemods.php" >WORLD OF GAME MODS</a>: A collection of game music modules for
+         all platforms.
+         </li>
+         <li 
+  class="enumerate" id="x1-8013x6"><a 
+href="http://amp.dascene.net/home.php" >Amiga Music Preservation (AMP)</a>: A database about amiga music.
+         </li>
+         <li 
+  class="enumerate" id="x1-8015x7"><a 
+href="http://www.ankman.de/amiga-mod-music/" >Ankman&#x2019;s Amiga MOD music download page</a>: Pop, Techno, Dance,
+         Trance and Game Music made with MOD trackers or the Amiga
+         computer.
+         </li>
+         <li 
+  class="enumerate" id="x1-8017x8"><a 
+href="http://aminet.net/tree?path=mods" >Aminet</a>: Another module repository.
+         </li>
+         <li 
+  class="enumerate" id="x1-8019x9"><a 
+href="http://fby.develer.com/fby/modulescollection.html" >FBY MODULE COLLECTION</a>: A small FTP repository.
+         </li>
+         <li 
+  class="enumerate" id="x1-8021x10"><a 
+href="https://www.scenemusic.net/demovibes/" >Nectarine Demoscene Radio</a>: Not downloads avaiable. A live module-based
+         radio operated by request of the registered users. Use, for example
+                                                                  
+
+                                                                  
+         <div class="verbatim" id="verbatim-1">
+         vlc http://nectarine.from-de.com/necta192
+</div>
+         <!--l. 315--><p class="nopar" > to play it (however, notice that the stream in MP3, not a module!).
+         </p></li>
+         <li 
+  class="enumerate" id="x1-8023x11"><a 
+href="http://www.mazemod.org/" >Mazemod Radio</a>: A web radio dedicated to Amiga &#x0026; tracker music culture
+         streaming various styles of computer electronic music from the demoscene
+         &#x0026; computer art subculture.</li></ol>
+     </li></ul>
+<!--l. 327--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">8   </span> <a 
+ id="x1-90008"></a>Taxonomy of a track row (revisited)</h3>
+     <ul class="itemize1">
+     <li class="itemize">Letter Note - Octave - Instrument (or Sample if no Instrument) - Volume
+     - Eﬀect Name - Eﬀect Number.</li></ul>
+<!--l. 333--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">9   </span> <a 
+ id="x1-100009"></a>About keyboards</h3>
+     <ul class="itemize1">
+     <li class="itemize">Most  trackers  support  MIDI  keyboards  that  allow  to  enter  notes  and
+     volumes, easily.
+     </li>
+     <li class="itemize">Most trackers provide a graphical facility with a keyboard that can be
+     controlled with the mouse.
+     </li>
+     <li class="itemize">Finally, most trackers maps the notes as follows: Q, A and Z is C note;
+     W, S &#x0026; X is C#, and so on.</li></ul>
+                                                                  
+
+                                                                  
+<!--l. 343--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">10   </span> <a 
+ id="x1-1100010"></a>Eﬀects (FX)</h3>
+     <ul class="itemize1">
+     <li class="itemize">See <a 
+href="http://www.milkytracker.org/docs/MilkyTracker.html#commands" >The Milky Tracker Manual</a>.</li></ul>
+<!--l. 350--><p class="noindent" >
+</p>
+   <h3 class="sectionHead"><span class="titlemark">11   </span> <a 
+ id="x1-1200011"></a>Please, no more theory!!!</h3>
+<!--l. 351--><p class="noindent" >
+     </p><ol  class="enumerate1" >
+     <li 
+  class="enumerate" id="x1-12002x1">Load an instrument from <a 
+href="http://freewavesamples.com/" class="url" ><span 
+class="ectt-1000">http://freewavesamples.com/</span></a>.
+     </li>
+     <li 
+  class="enumerate" id="x1-12004x2">Enter using only one channel (track):
+                                                                  
+
+                                                                  
+     <div class="verbatim" id="verbatim-2">
+     BB = Beat
+      <br />NN = Note
+      <br />O  = Octave
+      <br />II = Instrument
+      <br />VV = Volume
+      <br />E  = Effect index
+      <br />ee = Effect parameter control
+      <br />
+      <br />BB NNOIIVVEee
+      <br />-- ----------
+      <br />00 E-4.1..D00
+      <br /> :          :
+      <br />(the rest doesn&#x2019;t matter)
+      <br />
+      <br />00 A-4.......
+      <br />01 E-4.......
+      <br />02 B-4.......
+      <br />03 E-4.......
+      <br />04 G-4.......
+      <br />05 A-4.......
+      <br />06 E-4.......
+      <br />07 C-5.......
+      <br />08 E-4.......
+      <br />09 D-5.......
+      <br />0A E-4.......
+      <br />0B B-4.......
+      <br />0C C-5.......
+      <br />0D E-4.......
+      <br />0E A-4.......
+      <br />0F E-4.......
+      <br />10 B-4.......
+      <br />11 E-4.......
+      <br />12 G-4.......
+      <br />13 A-4.......
+      <br />14 E-4.......
+      <br />15 C-5.......
+      <br />16 E-4.......
+      <br />17 D-5.......
+      <br />18 E-4.......
+      <br />19 B-4.......
+      <br />1A C-5.......
+      <br />1B E-4.......
+                                                                  
+
+                                                                  
+      <br />1C B-4....D00
+      <br /> :          :
+      <br />(the rest doesn&#x2019;t matter)
+</div>
+     <!--l. 400--><p class="nopar" >
+     </p></li>
+     <li 
+  class="enumerate" id="x1-12006x3">Play it.
+     </li>
+     <li 
+  class="enumerate" id="x1-12008x4">Now enter the same patters but using four channels (each row in a diﬀerent
+     track, cyclically). Do you think that using only one track, Milky Tracker
+     provides poliphony?
+     </li></ol>
+    
+</body> 
+</html>
+                                                                  
+
+
